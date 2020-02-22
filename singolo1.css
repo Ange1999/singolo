@@ -1,0 +1,55 @@
+
+.wrapper{
+    width: 1024px;
+    margin-left: 40px;
+}
+.header{
+    display: flex;
+    height: 89px;
+    background-color: rgb(45, 48, 58);    
+}
+/*{
+height: 6px;
+background-color: rgb(50, 55, 70);
+}*/
+
+ul.navigation li{
+
+    display: inline;
+
+}
+
+.slider{
+    display: flex;
+    height: 600px;
+    background-color: rgb(240, 108, 100);
+}
+.iPhone{
+    display: flex;
+}
+#vertical{
+    border-radius: 30px;
+    margin-left: 70px;
+    margin-top: 53px;
+
+}
+
+#horizontal{
+    border-radius: 30px;
+    margin-left: 425px;
+    transform: rotate(90deg);
+}
+
+.layout-3col-1{
+display: flex;
+
+}
+.layout-3col-2{
+    display: flex;
+}
+
+.our_services
+{
+    height: 495px;
+    background-color: #f2f2f2;
+}
