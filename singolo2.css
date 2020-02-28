@@ -1,0 +1,62 @@
+*{
+    font-family: "Lato";
+    margin: 0;  
+    padding:0;
+}
+.portfolio{
+    height: 870px;
+    width: 1020px;
+    background-color: #2d303a;
+}
+.portfolio h2{
+    font-size: 30px;
+    line-height: 18px;
+    color: #666d89;
+    font-family: "Lato";
+    padding-left: 40px; 
+    padding-top: 67px;
+}
+.portfolio p{
+    font-size: 18px;
+    line-height: 30px;
+    color: #767e9e;
+    padding-left: 40px; 
+    padding-top: 30px;
+}
+.portfolio .portfolio_navigation ul {
+    display: flex;
+    padding-left: 40px;
+    list-style-type: none;
+    padding-top: 10px;
+ }
+ .portfolio .portfolio_navigation .port_navigation li{
+    display: flex;
+    font-size: 12px;
+    line-height: 22px;
+    list-style-type: none;
+    margin-right: 11px;
+    border-radius: 5px;
+    border: 1px solid #666d89;
+    padding-right: 6px;
+    padding-left: 6px;
+
+    
+ }
+ a{
+    text-decoration: none;
+    color: #767e9e;
+ }
+.portfolio .image {  
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap: 20px;
+    padding-left: 40px; 
+    padding-right: 40px; 
+    padding-top: 20px;
+  }
+  .color3{
+    width: 1020px;
+    height: 6px;
+    background-color: #323746;
+  }
