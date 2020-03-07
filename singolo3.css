@@ -1,16 +1,12 @@
 *{
     font-family: "Lato";
+    padding: 0;
     margin: 0;
-    width: 1020px;  
-    padding:0;
-    
-    
 }
 .main{
     height: 648px;
     background-color: #f06c64;
-   
-    
+    width: 1020px; 
 }
 .get_a_quote {
     display: flex;
@@ -93,7 +89,7 @@
  }
 
  
- .contact_inf{
+.contact_inf{
     display: flex;
     flex-direction: column;
     margin-left: 21px;
@@ -115,7 +111,7 @@
     margin-right: 40px;
      
  }
- .contact_inf ul{
+ .third .contact_inf ul{
     display: flex;
     list-style-type: none;
     flex-direction: column;
@@ -136,14 +132,14 @@
     background-color: #ea676b;
     
  }
- footer{
+ .third footer{
     display: flex;
     width: 1020px;  
     height: 76px;
     background-color: #2d303a;
 
  }
- footer p{
+ .third footer p{
     margin-left: 40px;
     margin-top: 33px;
     color: rgb(91, 97, 121);
@@ -151,14 +147,15 @@
     line-height: 22px;
 
  }
- footer ul{
+ .third footer ul{
     display: flex;
     list-style-type: none;
     width: 152px;
-    margin-right: 40px;
+    margin-left: 686px;
     margin-top: 23px;
  }
- footer ul li img{
+ .third footer ul li img{
      width:32px;
      height: 32px;
+     padding-left: 8px;
  }
