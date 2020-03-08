@@ -1,7 +1,6 @@
 *{
     font-family: "Lato";
-    margin: 0;  
-    padding:0;
+    margin: 0px auto; 
 }
 .portfolio{
     height: 863px;
@@ -23,22 +22,23 @@
     padding-left: 40px; 
     padding-top: 30px;
 }
-.portfolio .portfolio_navigation ul {
+.second .portfolio .portfolio_navigation ul {
     display: flex;
     padding-left: 40px;
     list-style-type: none;
     padding-top: 10px;
  }
- .portfolio .portfolio_navigation .port_navigation li{
+ .second .portfolio .portfolio_navigation .port_navigation li{
     display: flex;
     font-size: 12px;
     line-height: 22px;
     list-style-type: none;
-    margin-right: 11px;
     border-radius: 5px;
     border: 1px solid #666d89;
     padding-right: 6px;
     padding-left: 6px;
+    margin-right: 6px;
+    margin-left: 6px;
  }
  a{
     text-decoration: none;
@@ -118,6 +118,8 @@
     list-style-type: none;
     width: 152px;
     padding-top: 23px;
+    margin-left: 0px;
+    padding-left: 0px;
    
 }
 
@@ -125,6 +127,7 @@
     width:32px;
     height: 32px;
     padding-right: 8px;
+    
 }
 .color4{
     display: flex;

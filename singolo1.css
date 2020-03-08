@@ -1,9 +1,8 @@
 *{
-    
     font-family: "Lato";
-
+    margin: 0px auto; 
 }
-.first .header {
+.header {
     display: flex;
     width: 1020px;
     height: 89px;
@@ -12,160 +11,170 @@
     
  }
  
- .first .header .header_navigation ul {
+ .header .header_navigation ul {
     display: flex;
-    list-style-type: none;
+    list-style-type: none; 
+    
  }
  .first ul li:nth-child(n+2) {
     list-style: disc;
     color: rgb(73,78,98) 
   }
-  .first .header .header_navigation ul li {
+ .header .header_navigation ul li {
     
-    font-size: 10px;
-    font-weight: 700;
+    font-size: 12px;
+    font-weight: 500;
     margin-left: 30px;
  }
 
- .first a{
+ a{
     text-decoration: none;
     color: #ffffff;
  }
 
- .first .header_navigation{
+ .header_navigation{
     display: flex;
-    padding-top: 45px;
-    padding-right: 38px; 
+    padding-top: 41px;
+    margin-right: 40px;
+    
  }
 
- .first .header .logo {
-    padding-left: 40px;
-    padding-top: 16px;
-    font-size: 19px;
+ .header .logo {
+    margin-left: 40px;
+    padding-top: 27px;
+    font-size: 13px;
     color: #ffffff;  
   }
 
-  .first .color{
+  .color{
     display: flex;
     width: 1020px;
     height: 6px;
     background-color: #323746;
   }
 
-  .first .color2{
+.color2{
     display: flex;
     width: 1020px;
     height: 15px;
     background-color: #ea676b;
 }
-.first .slider{
+.slider{
     
-    display:flex;
     height: 600px;
-    flex-direction: row;
-    align-items: center;
+    display: flex;
     width: 1020px;
     background-color: #f06c64;
+    position: relative;
+	overflow: hidden;
 }
 
-.first .iPhone{
+.iPhone{
     display: flex;
     
+    
 }
-.first #vertical{
-    margin-left: 112px;
-    border-radius: 30px; 
-   
+#vertical{
+    border-radius: 30px;  
+    padding-left: 80px;
+    margin-top: 53px;
+    height: 482px;
+    
 }
 
-.first #horizontal{
+#horizontal{
     border-radius: 30px;
-    margin-left: 98px;
+    padding-right: 70px;
+    margin-top: 173px;
+    height: 240px;
 }
 
 
-.first .our_services{
+.our_services{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     width: 1020px;
-    height: 495px;
+    height: 430px;
     background-color: #f2f2f2;
-    padding-top: 65px;
+    padding-top: 64px;
     
 }
-.first .our_services .service{
-    padding-top: 34px;
+.our_services .service{
+    padding-top: 27px;
     width: 940px;
     height: 57px;
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
-    padding-left: 40px;
-
 }
-.first .our_services h2{
+.our_services h2{
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
-    font-weight: 900;
-    padding-left: 40px;
+    font-weight: 700;
+    margin-left: 40px;
 }
-.first .layout-3col-1{
+
+.layout-3col-1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 51px;
-    padding-left: 40px;
+    margin-left: 40px;
 }
-.first .block{
+.block{
     display: flex;
     width: 300px;
     height: 85px;
+    margin-left:10px;
 }
-.first .layout-3col-1 .block .text p{
-    
+.layout-3col-1 .block .text p{
     font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
     font-weight: 400;
-    color: #5c6174;
+    text-align: left;
+    width: 219px;
     
 }
-.first .layout-3col-1 .block .text h4{
+.layout-3col-1 .block .text h4{
     font-size: 18px;
-    
     color: #666d89;
     font-weight: 900;
-    margin-top: 0px;
-    margin-bottom: 14px;
+    margin-bottom: 10px;
 
 }
-.first .text{
-    margin-left: 20px;
+.text{
+    margin-left: 25px;
 }
-.first .layout-3col-1 .block img{
+.layout-3col-1 .block img{
     height: 60px;
 }
 
-.first .layout-3col-2{
+.layout-3col-2{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    padding-top: 51px;
-    padding-left: 40px;
+    padding-top: 40px;
+    margin-left: 40px;
 }
-.first .layout-3col-2 .block img{
+.layout-3col-2 .block img{
     height: 60px;
 }
-.first .layout-3col-2 .block .text p{
+.layout-3col-2 .block .text p{
     
     font-size: 12px;
+    line-height: 22px;
+    color: #767e9e;
+    font-family: "Lato";
     font-weight: 400;
-    color: #5c6174;
+    text-align: left;
     
 }
-.first .layout-3col-2 .block .text h4{
-    font-size: 18px;
-    
+.layout-3col-2 .block .text h4{
+    font-size: 18px;  
     color: #666d89;
     font-weight: 900;
     margin-top: 0px;
