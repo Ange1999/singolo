@@ -1,17 +1,31 @@
 *{
-    font-family: "Lato";
     margin: 0px auto; 
 }
-.header {
+@font-face {
+    font-family: "Lato Light";
+    src: url("assets/fonts/Lato-Light.ttf");
+  }
+  
+  @font-face {
+    font-family: "Lato Regular";
+    src: url("assets/fonts/Lato-Regular.ttf");
+  }
+  
+  @font-face {
+    font-family: "Lato Bold";
+    src: url("assets/fonts/Lato-Bold.ttf");
+  }
+#header {
     display: flex;
     width: 1020px;
     height: 89px;
     background-color: #2d303a;
     justify-content: space-between; 
+   
     
  }
  
- .header .header_navigation ul {
+ #header .header_navigation ul {
     display: flex;
     list-style-type: none; 
     
@@ -20,16 +34,12 @@
     list-style: disc;
     color: rgb(73,78,98) 
   }
- .header .header_navigation ul li {
+ #header .header_navigation ul li {
     
     font-size: 12px;
     font-weight: 500;
     margin-left: 30px;
- }
-
- a{
-    text-decoration: none;
-    color: #ffffff;
+    cursor: pointer;
  }
 
  .header_navigation{
@@ -39,7 +49,7 @@
     
  }
 
- .header .logo {
+ #header .logo {
     margin-left: 40px;
     padding-top: 27px;
     font-size: 13px;
@@ -50,6 +60,7 @@
     display: flex;
     width: 1020px;
     height: 6px;
+
     background-color: #323746;
   }
 
@@ -59,38 +70,134 @@
     height: 15px;
     background-color: #ea676b;
 }
-.slider{
-    
+#slider{
     height: 600px;
     display: flex;
     width: 1020px;
     background-color: #f06c64;
-    position: relative;
-	overflow: hidden;
+   
 }
-
-.iPhone{
+ #toRight{
+    height: 27px;
+    margin-top: 280px;
+    margin-right: 40px;
+    cursor: pointer;
+ }
+ #toLeft{
+    height: 27px;
+    margin-top: 280px;
+    margin-left: 40px;
+    transform: rotate(180deg); 
+    cursor: pointer;
+ }
+ 
+.phone{
     display: flex;
-    
-    
-}
-#vertical{
-    border-radius: 30px;  
-    padding-left: 80px;
-    margin-top: 53px;
-    height: 482px;
-    
+    width: 907px;
+
 }
 
-#horizontal{
-    border-radius: 30px;
-    padding-right: 70px;
-    margin-top: 173px;
+#horizontalPhone{
+    width: 483px;
     height: 240px;
+    margin-left: -50px;
+    margin-top: 174px;
+    position: absolute;
+    margin-left: -310px;
+    cursor: pointer;
+
+}
+.fullImg{
+    position: relative;
+}
+#verticalPhone{
+    width: 240px;
+    height: 483px;
+    margin-top: 53px;
+    position: absolute;
+    margin-left: -170px;
+    cursor: pointer;
+}
+#yellow{
+    position: absolute;
+    margin-top: 115px;
+    margin-left: -159px;
+}
+#blue{
+    margin-top: 185px;
+    margin-left: -253px;
+    position: absolute;
+}
+
+.offScreen{
+    display: none;
+}
+#horizontalPhone2{
+    width: 483px;
+    height: 240px;
+    margin-top: 174px;
+}
+
+#verticalPhone2{
+    width: 240px;
+    height: 483px;
+    margin-left: -50px;
+    margin-top: 53px;
+}
+#leftPhone{
+    margin-left: 195px;
+    margin-top: 152px;
+    width: 156px;
+    height: 314px;
+}
+#rightPhone{
+    margin-top: 152px;
+    width: 156px;
+    height: 314px;
+    margin-left: -221px;
+    
+}
+#centerPhone{
+    margin-top: 43px;
+    margin-left: -218px;
+    z-index: 1;
+    width: 255px;
+    height: 513px;
+}
+.sliderJ .item {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 3s;
+    animation-name: fade;
+    animation-duration: 3s;
+    
+   
+}
+@-webkit-keyframes fade {
+    from {
+        opacity: .3;
+        -webkit-transform: scale(0.6);
+    }
+    to {
+        opacity: 1;
+        -webkit-transform: scale(1.0);
+    }
+}
+@keyframes fade {
+    from {
+        opacity: .3;
+        transform: scale(0.6);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1.0);
+    
+    }
 }
 
 
-.our_services{
+
+
+#our_services{
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -99,8 +206,10 @@
     background-color: #f2f2f2;
     padding-top: 64px;
     
+    
 }
-.our_services .service{
+
+#our_services .service{
     padding-top: 27px;
     width: 940px;
     height: 57px;
@@ -108,7 +217,7 @@
     line-height: 30px;
     color: #767e9e;
 }
-.our_services h2{
+#our_services h2{
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -181,12 +290,12 @@
     margin-bottom: 14px;
 
 }
-.portfolio{
+#portfolio{
     height: 863px;
     width: 1020px;
     background-color: #2d303a;
 }
-.portfolio h2{
+#portfolio h2{
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
@@ -194,20 +303,20 @@
     padding-left: 40px; 
     padding-top: 67px;
 }
-.portfolio p{
+#portfolio p{
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
     padding-left: 40px; 
     padding-top: 30px;
 }
-.second .portfolio .portfolio_navigation ul {
+.second #portfolio .portfolio_navigation ul {
     display: flex;
     padding-left: 40px;
     list-style-type: none;
     padding-top: 10px;
  }
- .second .portfolio .portfolio_navigation .port_navigation li{
+ .second #portfolio .portfolio_navigation .port_navigation li{
     display: flex;
     font-size: 12px;
     line-height: 22px;
@@ -227,7 +336,7 @@
     color: #dedede;
  
    }
-.portfolio .image {  
+#portfolio #image {  
     display: grid;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -242,20 +351,20 @@
     height: 6px;
     background-color: #323746;
   }
-  .about_us{
+  #about_us{
     width: 1020px;
     height: 728px;
     background-color: #f2f2f2;
     
   }
-  .about_us h2{
+  #about_us h2{
     padding-top: 68px;
     padding-left: 40px; 
     font-size: 30px;
     line-height: 18px;
     color: #666d89;
   }
- .about_us #p_us {
+ #about_us #p_us {
     font-size: 18px;
     line-height: 30px;
     color: #767e9e;
@@ -314,7 +423,7 @@
     height: 6px;
     background-color: #ffffff;
 }
-.main{
+#main{
     height: 648px;
     background-color: #f06c64;
     width: 1020px; 
@@ -475,3 +584,15 @@
      height: 32px;
      padding-left: 8px;
  }
+ 
+.selected_img{
+     border: 5px solid #F06C64;
+ }
+
+.selected_nav{
+    color:rgb(240,108,100) !important;
+}
+
+.selected_portfolio{
+    color: #ffffff !important;
+}

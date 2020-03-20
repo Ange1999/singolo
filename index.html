@@ -11,33 +11,48 @@
 
 <body>
     <div class="first">
-        <header class="header">
+        <header id="header">
             <div class="logo">
             <h1><a href="#">SINGOLO<span style ="color: rgb(144,147,157)">*</span></a></h1>
             </div>
     <nav class ="header_navigation">
         <ul class="navigation">
-            <li><a style="color: rgb(240,108,100)" href="#">HOME</a></li>
-            <li><a href="#">SERVICES</a></li>
-            <li><a href="#">PORTFOLIO</a></li>
-            <li><a href="#">ABOUT</a></li>
-            <li><a href="#">CONTACT</a></li>
+            <li><a class="elems" href="#slider">HOME</a></li>
+            <li><a class="elems" href="#our_services">SERVICES</a></li>
+            <li><a class="elems" href="#portfolio">PORTFOLIO</a></li>
+            <li><a class="elems" href="#about_us">ABOUT</a></li>
+            <li><a class="elems" href="#main">CONTACT</a></li>
         </ul> 
     
     </nav>
         </header>
         <div class="color"></div>
     
-    <section class="slider">
-        <div class="iPhone">
-            <img src="./assets//img/iPhone Vertical.png" alt="iPhone" id="vertical">
+    <section id="slider">
+        <a class="prev" onclick="minusSlide()"><img id="toLeft" src="./assets/chev.png"></a>
+
+        <div class = "sliderJ">
+        <div class = "phone item">
+            <div class="fullImg">
+            <img data-relatedScreen="yellow" id="verticalPhone" src="./assets/img/iPhone Vertical.png">
+            <img id="yellow" src="./assets/img/iPhone img.png">
         </div>
-        <div class="iPhone">
-            <img src="./assets/img/iPhone Horizontal.png" alt="iPhone" id="horizontal">
+        <div class="fullImg">
+            <img data-relatedScreen="blue" id="horizontalPhone" src="./assets/img/iPhone Horizontal.png"> 
+            <img id="blue" src="./assets/img/iPhone Horizontal1111.png">
+            </div> 
         </div>
+        <div class = "phone item" id="next_slider">
+            <img id="leftPhone" src="./assets/img/phone-vertical (1).png">
+            <img id="centerPhone" src="./assets/img/phone-vertical.png">
+            <img id="rightPhone" src="./assets/img/phone-vertical (1).png">
+        </div>
+    </div>
+
+        <a class="next" onclick="plusSlide()"><img id ="toRight" src="./assets/chev.png"></a>
     </section>
     <div class="color2"></div>
-    <section class = "our_services">
+    <section id = "our_services">
         <h2>Our Services</h2>
         <p class ="service">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum hibh.</p>
         <div class="layout-3col-1">
@@ -92,34 +107,34 @@
     </section>
     </div>
     <div class="second">
-        <section class="portfolio">
+        <section id="portfolio">
             <h2>Portfolio</h2>
             <p>Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit.</p>
             <nav class ="portfolio_navigation">
                 <ul class="port_navigation">
-                    <li><a href="#">All</a></li>
-                    <li><a href="#">Web Design</a></li>
-                    <li><a href="#">Graphic Design</a></li>
-                    <li><a href="#">Artwork</a></li>
+                    <li><a class = "portfolioElems" id="1" href="#">All</a></li>
+                    <li><a class = "portfolioElems" id="2" href="#">Web Design</a></li>
+                    <li><a class = "portfolioElems" id="3" href="#">Graphic Design</a></li>
+                    <li><a class = "portfolioElems" id="4" href="#">Artwork</a></li>
                 </ul> 
             </nav>
-            <div class="image">
-                <div><img src="./assets/ship.png"></div>
-                <div><img src="./assets/girl.png"></div>
-                <div><img src="./assets/black_white.png"></div>
-                <div><img src="./assets/Robo.png"></div>
-                <div><img src="./assets/party.png"></div>
-                <div><img src="./assets/SDK.png"></div>
-                <div><img src="./assets/rbo.png"></div>
-                <div><img src="./assets/bird.png"></div>
-                <div><img src="./assets/green_monster.png"></div>
-                <div><img src="./assets/words.png"></div>
-                <div><img src="./assets/monster.png"></div>
-                <div><img src="./assets/Images.png"></div>
+            <div id="image">
+                <div><img class="picture" src="./assets/ship.png"></div>
+                <div><img class="picture" src="./assets/girl.png"></div>
+                <div><img class="picture" src="./assets/black_white.png"></div>
+                <div><img class="picture" src="./assets/Robo.png"></div>
+                <div><img class="picture" src="./assets/party.png"></div>
+                <div><img class="picture" src="./assets/SDK.png"></div>
+                <div><img class="picture" src="./assets/rbo.png"></div>
+                <div><img class="picture" src="./assets/bird.png"></div>
+                <div><img class="picture" src="./assets/green_monster.png"></div>
+                <div><img class="picture" src="./assets/words.png"></div>
+                <div><img class="picture" src="./assets/monster.png"></div>
+                <div><img class="picture" src="./assets/Images.png"></div>
             </div>
         </section>
         <div class="color3"></div>
-        <section class="about_us">
+        <section id="about_us">
             <h2>About Us</h2>
             <p id="p_us">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum hibh.</p>
     <div class="people">
@@ -165,7 +180,7 @@
         <div class="color4"></div>
     </div>
     <div class="third">
-        <section class="main">
+        <section id="main">
             <div class="get_a_quote">
                 <h2>Get a Quote</h2>
                 <p>Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum. Duis mollis, on commodo luctus,
@@ -176,8 +191,8 @@
                 <form>
                     <input class="form_elem" type="text" name="name" placeholder="Name" required>
                     <input class="form_elem" type="email" name="email" placeholder="Email" required>
-                    <input class="form_elem" type="text" name="subject" placeholder="Subject">
-                    <textarea class="form_elem" name="comment" placeholder="Describe your project in detail"></textarea>
+                    <input class="form_elem" type="text" id="subject" name="subject" placeholder="Subject">
+                    <textarea class="form_elem" name="comment" id="describe" placeholder="Describe your project in detail"></textarea>
                     <input class="form_elem" id="submit" type="submit" name="button" value="Submit">
                 </form>
                 <section class="contact_inf">
@@ -207,7 +222,7 @@
             </ul>
         </footer>
     </div>
-
+<script src="./index.js"></script>
 </body>
 
 </html>
