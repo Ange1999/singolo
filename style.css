@@ -1,9 +1,6 @@
 *{
     margin: 0px auto; 
 }
-body{
-background-color: white;    
-}
 @font-face {
     font-family: "Lato Light";
     src: url("assets/fonts/Lato-Light.ttf");
@@ -333,7 +330,7 @@ background-color: white;
  }
  a{
     text-decoration: none;
-    color: #767e9e;
+    color: #FFFFFF;
  }
   a:hover {
     color: #dedede;
@@ -604,20 +601,18 @@ background-color: white;
 
 @media (min-width: 375px) and (max-width: 768px) {
     *{
-        margin: 0;
+        margin: -1px;
     }
     #header{
         height: 71px;
     }
-    body{
-        background-color: #323746;
+    .header_navigation{
+        display: none;
     }
     .color{
         display: none;
     }
-  .color2{
-    margin-top: 0px;
-  }  
+  
   
     #slider{
       
@@ -827,5 +822,33 @@ background-color: white;
     }
     .third footer ul{
     padding-left: 104px;
+    }
+    
+ 
+    #leftPhone{
+        width: 60px;
+        height: 122.4px;
+        margin-top: 40px;
+        margin-left: 193px;
+    }
+    #rightPhone{
+       
+        width: 60px;
+        height: 122.4px;
+        margin-top: 40px;
+        margin-left: -140px;
+        
+    }
+    #centerPhone{
+        margin-top: 20px;
+        width: 88px;
+        height: 177px;
+        margin-left: -138px;
+    }
+    #header .logo {
+        padding-left: 148px;
+        margin: 0px;
+        letter-spacing: -0.03em;
+    
     }
 };
