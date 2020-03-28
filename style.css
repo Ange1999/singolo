@@ -1,6 +1,9 @@
 *{
     margin: 0px auto; 
 }
+body{
+background-color: white;    
+}
 @font-face {
     font-family: "Lato Light";
     src: url("assets/fonts/Lato-Light.ttf");
@@ -60,14 +63,14 @@
     display: flex;
     width: 1020px;
     height: 6px;
-
     background-color: #323746;
   }
 
 .color2{
     display: flex;
     width: 1020px;
-    height: 15px;
+    height: 7px;
+    padding: 0px;
     background-color: #ea676b;
 }
 #slider{
@@ -349,6 +352,7 @@
     display: flex;
     width: 1020px;
     height: 6px;
+    padding: 0px;
     background-color: #323746;
   }
   #about_us{
@@ -422,6 +426,7 @@
     width: 1020px;
     height: 6px;
     background-color: #ffffff;
+    padding: 0px;
 }
 #main{
     height: 648px;
@@ -497,13 +502,13 @@
 
 #submit{
     width: 100px;
-    color: #f0d8da;
-    background-color: rgb(38, 97, 102);
-    font-size: 16px;
-    line-height: 22px;
+    background-color: #FBC65F;
+    color: #886A30;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
     margin-left: 0px !important;
     cursor: pointer;
-    
  }
  .form_elem:not(:first-child){
     margin-top: 15px;
@@ -551,11 +556,11 @@
   
  }
 
- .color2{
+ .color5{
     width: 1020px;
     height: 6px;
     background-color: #ea676b;
-    
+    padding: 0px; 
  }
  .third footer{
     display: flex;
@@ -596,3 +601,231 @@
 .selected_portfolio{
     color: #ffffff !important;
 }
+
+@media (min-width: 375px) and (max-width: 768px) {
+    *{
+        margin: 0;
+    }
+    #header{
+        height: 71px;
+    }
+    body{
+        background-color: #323746;
+    }
+    .color{
+        display: none;
+    }
+  .color2{
+    margin-top: 0px;
+  }  
+  
+    #slider{
+      
+        height: 220px;
+    }
+    .sliderJ{
+       
+        height: 220px;
+        width: 355px;
+    }
+    #verticalPhone{
+        margin-top: 20px;
+        width: 88px;
+        height: 177px;
+        margin-left: 20px;
+        
+    }
+    #toLeft{
+        
+        margin-top: 98px;
+        height: 25px;
+        margin-left: 12px;
+        
+    }
+    #toRight{
+        margin-top: 98px;
+        height: 25px;
+        margin-left: -35px;
+       
+    }
+
+    #horizontalPhone{
+        width: 177px ;
+        height: 88px; 
+        margin-top: 65px;
+        margin-left: 135px;
+      }
+    #yellow{
+        width: 69px;
+        height: 122px;
+        margin-top: 44px;
+        margin-left: 25px;
+      }
+    #blue{
+        width: 122px;
+        height: 69px;
+        margin-top: 70px;
+        margin-left: 157px;
+      }
+    #our_services{
+        padding-top: 35px;
+        height: 1030px;
+      }
+      #our_services h2{
+        margin-left: 32px;  
+    }
+    #our_services .service{
+        margin-left: 32px;  
+        width: 303px;
+        font-size: 19px;
+        height: 214;
+    }
+    .layout-3col-1{
+        padding-top: 139px;
+        flex-direction: column;
+        margin-left: 32px;  
+    }
+    .layout-3col-2{
+        flex-direction: column;
+        padding-top: 0px;
+        margin-left: 32px;  
+        
+        }
+    .layout-3col-1 .block {
+        padding-top: 42px;
+        }
+
+    .layout-3col-2 .block {
+        padding-top: 42px;
+        }
+
+    .layout-3col-1 .block img{
+        margin-left: -11px;
+        }
+
+    .layout-3col-2 .block img{
+        margin-left: -11px;
+        }
+
+    #portfolio{
+          height: 844px;
+    }
+
+    #portfolio #image {
+        display: grid;
+        grid-template-rows:  1fr 1fr 1fr 1fr;
+        grid-template-columns:  1fr 1fr ;
+        gap: 14px;
+        padding-top: 25px;
+        padding-left: 30px;
+        width: 315px;
+    }    
+
+    #image .picture{
+        width: 151px;
+        height: 128px;
+      
+    }
+
+    #image .dispNone{
+        display: none;
+    }
+
+    #portfolio h2{
+        padding-left: 30px;
+        padding-top: 42px;
+    }
+
+    #portfolio p {
+        width: 315px;
+        height: 96px;
+        padding-left: 30px;
+    }
+    .second #portfolio .portfolio_navigation ul{
+        padding-left: 30px;
+    }
+    #about_us{
+        height: 1676px;
+    }
+    
+    #about_us h2{
+        padding-left: 30px;
+        padding-top: 33px;
+    }
+    #about_us #p_us{
+        padding-left: 30px;
+        width: 315px;
+        
+    }
+    .people{
+        flex-direction: column;
+        padding-left: 30px;
+    }
+    .person .person_img{
+        padding-top: 34px;
+    }
+    .person p{
+        padding-top: 0px;
+    }
+    .person .media{
+        padding-top: 9px;
+    }
+    #main{
+        height: 969px;
+    }
+
+    .get_a_quote p{
+        
+        width: 314px;
+        height: 214px;
+    }
+    .get_a_quote{
+        padding-top: 44px;
+        padding-left: 30px;
+    }
+    .information{
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top:0;
+        flex-direction: column;
+    }
+    .form_elem{
+        width: 310px;
+        margin-top: -10px;
+        
+    }
+    .form_elem:not(:first-child){
+        margin-top: 12px;
+    }
+    .information form textarea{
+        width: 310px;
+        height: 159px;
+    }
+    #submit{
+        width: 323px;
+        height: 38px;
+    }
+    .contact_inf{
+        margin-top: 32px;
+        margin-left: 0px;
+    }
+    .contact_inf p{
+        font-size: 14px;
+        width: 315px;
+        height: 94px;
+    }
+
+    .third .contact_inf ul li{
+        padding-top: 5px;
+    }
+    .third footer p{
+        display: none;
+       
+    }
+    .third footer{
+        height: 76px;
+    }
+    .third footer ul{
+    padding-left: 104px;
+    }
+};
